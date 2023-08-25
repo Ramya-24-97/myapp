@@ -1,38 +1,338 @@
-.App {
-  text-align: center;
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'nota' sans-serif;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.hero-section {
+    background-image: url(https://www.valuecoders.com/wp-content/uploads-webpc/uploads/2023/05/ai-banner.jpg.webp);
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    width: 100%;
+    display: -webkit-flex;
+    justify-content: left;
+    align-items: center;
+    padding: 117px 0 80px;
+    position: relative;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.hero-content {
+    width: 100%;
+    height: 80vh;
+    padding: 0;
+    border-radius: 2px;
+    position: absolute;
+    top: 0%;
+    text-align: Left;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.hero-content h1 {
+    font-weight: bold;
+    color: #ffb81d;
+    font-size: 3rem;
+    justify-content: center;
+    text-align: unset;
+    padding-left: 80px;
+    padding-right: 80px;
 }
 
-.App-link {
-  color: #61dafb;
+.hero-content p {
+    font-weight: 600;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    justify-content: center;
+    padding-left: 80px;
+    padding-right: 80px;
+    color: #fff;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cta-button {
+    background-color: transparent;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 2px;
+    padding-left: 80px;
+    padding-right: 80px;
+
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.1s;
 }
+
+.cta-button:hover {
+    background-color: #ff5500;
+}
+
+.bg-overlay {
+    height: 80vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0%;
+    z-index: 2;
+}
+
+.breadcrmbnav {
+    list-style: none;
+    padding: 40px;
+}
+
+.breadcrmbnav li {
+    display: inline-block;
+    font-weight: bold;
+
+}
+
+.breadcrmbnav li::after {
+    content: " > ";
+    color: gray;
+
+}
+
+.breadcrmbnav li:last-child::after {
+    content: "";
+
+}
+
+.breadcrmbnav a {
+    font-weight: bold;
+    text-decoration: none;
+    color: gray;
+}
+
+.breadcrmbnav a:hover {
+    text-decoration: double;
+    color: white;
+}
+
+/* -----------------section------------- */
+
+.section {
+    padding: 40px;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    padding-left: 0px;
+}
+
+.main-heading {
+    font-size: 12px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #aaadb6;
+    font-weight: 500;
+    display: flex;
+}
+
+/* ---------------------------------------------------------------ai service------------------------------------------------------ */
+ .container { 
+    width: 100%;
+    max-width: 1480px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.three-column-icon-section .col-box-outer .box {
+    height: 100%;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    padding: 0 0 60px;
+    padding-right: 130px;
+}
+
+.three-column-icon-section .top-content h2  {
+    margin: 0;
+}
+.dis-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+.three-column-icon-section .top-content .flex-2:first-child {
+    padding-right: 130px;
+}
+.flex-2 h2 {
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: bold;
+    color: #05164d;
+    margin: 0 0 20px;
+    padding-bottom: 50px;
+    
+}
+.top-content p {
+    color: #3f3f3f;
+    line-height: 26px;
+}
+p:last-child {
+    margin-bottom: 0px;
+}
+
+.flex-2 p {
+    font-size: 20px;
+    color: #666666;
+    line-height: 29px;
+    margin: 0 0 20px;
+    padding-bottom: 50px;
+}
+
+
+
+.flex-2:first-child {
+    padding-right: 20px;
+}
+.flex-2 {
+    flex-basis: 50%;
+}
+.three-column-icon-section .col-box-outer .box h3 {
+    margin: 0 0 20px;
+    padding-top: 20px;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to right, #ffcf66, #e19b01);
+    border-top: 4px solid;
+}
+
+.three-column-icon-section .col-box-outer .box {
+    height: 100%;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+}
+.three-column-icon-section .col-box-outer .has-vlink .box {
+    padding: 0 0 60px;
+}
+.box {
+
+}
+.three-column-icon-section .col-box-outer .has-vlink .box .box-link {
+    font-size: 0;
+}
+.three-column-icon-section .col-box-outer .has-vlink .box .box-link a {
+    content: "";
+    border-bottom: 1px solid #d1d1e1;
+    width: 100%;
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+}
+.three-column-icon-section a {
+    text-decoration: none;
+}
+
+.three-column-icon-section .col-box-outer .has-vlink .box .box-link a:after {
+    content: "";
+    width: 48px;
+    height: 48px;
+    border: 1px solid #d1d1e1;
+    border-bottom: 0;
+    background: url(https://www.valuecoders.com/wp-content/themes/valuecoders/v3.0/images/angle.png) no-repeat center;
+    border-bottom: 0;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+a {
+    color: #212121;
+    text-decoration: none;
+}
+.box h3 {
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 600;
+    color: #3f3f3f;
+}
+ 
+ p {
+        margin-top: 0;
+        font-size: 16px;
+        color: #666666;
+        line-height: 29px;
+        margin: 0 0 20px;
+    }
+    .three-column-icon-section .col-box-outer .box-3 {
+        padding-right: 50px;
+        margin-top: 50px;
+    }
+    .flex-3 {
+        flex-basis: 33.33%;
+    }
+    .margin-t-50 {
+        margin-top: 50px;
+    }
+    /* -----------------------------------lets discuss part-------------------------- */
+    section {
+        position: relative;
+    }
+    .discussion-section {
+        position: relative;
+        z-index: 1;
+    }
+    .padding-b-70 {
+        padding-bottom: 60px;
+        padding-top: 70px;
+    }
+    .discussion-section:before, .experts-talk-first-section:after {
+        content: "";
+        position: absolute;
+        z-index: -1;
+    }
+    .discussion-section:before {
+        background: url() 0 0 no-repeat;
+        background-size: 100%;
+        bottom: 0;
+        left: 0;
+        width: 116px;
+        height: 163px;
+    }
+    .bg-blue-linear {
+        background: linear-gradient(180deg, #211f47 0%, #05164d 100%);
+    }
+    .bg-blue-linear h2 {
+        color: #ffffff;
+    }
+    .text-center {
+        text-align: center;
+    }
+    .headtext h2 {
+        font-size: 36px;
+        line-height: 49px;
+        font-weight: bold;
+        margin: 0 0 20px;
+    }
+    .headtext p {
+        margin-top: 20px;
+        color: #3f3f3f;
+        line-height: 26px;
+    }
+    p:last-child {
+        margin-bottom: 0px;
+    }
+    .bg-blue-linear p {
+        color: #9b9b9b !important;
+    }
+    .headtext p {
+        font-size: 20px;
+        color: #666666;
+        line-height: 29px;
+        margin: 0 0 20px;
+        margin-top: 0;
+    }
+    
+   
+
+
