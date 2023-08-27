@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/https://github.com/Ramya-24-97/myapp.git/static/css/main.c84871fe.css",
+    "main.js": "/https://github.com/Ramya-24-97/myapp.git/static/js/main.d13cdd71.js",
+    "static/js/787.d3befce1.chunk.js": "/https://github.com/Ramya-24-97/myapp.git/static/js/787.d3befce1.chunk.js",
+    "index.html": "/https://github.com/Ramya-24-97/myapp.git/index.html",
+    "main.c84871fe.css.map": "/https://github.com/Ramya-24-97/myapp.git/static/css/main.c84871fe.css.map",
+    "main.d13cdd71.js.map": "/https://github.com/Ramya-24-97/myapp.git/static/js/main.d13cdd71.js.map",
+    "787.d3befce1.chunk.js.map": "/https://github.com/Ramya-24-97/myapp.git/static/js/787.d3befce1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c84871fe.css",
+    "static/js/main.d13cdd71.js"
+  ]
+}
