@@ -1,7 +1,7 @@
 {
   "name": "myapp",
   "version": "0.1.0",
-  "homepage": "https://Ramya-24-27.github.io/https://github.com/Ramya-24-97/myapp.git",
+  "homepage": "https://Ramya-24-27.github.io/myapp",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
