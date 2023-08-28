@@ -11,15 +11,29 @@
         font-size: 28px;
         line-height: 34px;
     }
+  
 }
 
 
+.hero-section h1 {
+    margin-bottom: 10px;
+    font-size: 42px;
+    line-height: 58px;
+    color: #ffad00;
+    font-weight: bold;
+
+}
 .hero-section p {
     margin: 0 0 20px;
+    font-size: 16px;
     line-height: 29px;
+    margin-top: 0%;
+}
+.hero-section p span, .hero-section strong, .second-level-section p span, .second-level-section strong {
+    color: #ffffff;
 }
 
-.content-wrap {
+.hero-section .content-wrap {
     position: relative;
     z-index: 9;
 }
@@ -59,16 +73,27 @@
 }
 
 .hero-section {
-    padding: 80px 0 80px;
-    background-size: none;
+    padding: 117px 0 80px;
+    background-size:cover;
     align-items: center;
+    display: -webkit-flex;
     background-image: url(https://www.valuecoders.com/wp-content/uploads-webpc/uploads/2023/05/ai-banner.jpg.webp);
     position: relative;
     background-repeat: no-repeat;
+    background-color: rgba(4, 12, 23, 0.7);
+    min-height: 70vh;
+}
+.hero-section, .second-level-section {
+    padding: 180px 0 70px;
+    display: grid;
+    flex-wrap: wrap;
+    min-height: calc(100vh - 120px);
+    align-items: center;
 }
 
-.hero-section::after,
-.second-level-section::after {
+
+.hero-section::after
+ {
     content: "";
     background-size: 100%;
     width: 100%;
@@ -85,7 +110,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 99%;
+    height: 100%;
 }
 
 @media only screen and (max-width: 991px) {
@@ -122,7 +147,7 @@
 .content-wrap h1 {
     font-weight: bold;
     color: #ffb81d;
-    font-size: 3rem;
+   
     justify-content: center;
 }
 
@@ -216,23 +241,23 @@
 }
 
 /* --------------------breadcrumb---------------- */
+
 .breadcrumbnav {
-    list-style: none;
-    padding: 30px;
-    font-size: 15px;
+    color: #ffffff;
+    font-size: 12px;
+    line-height: 22px;
     text-align: left;
-    margin-bottom: 30px;
+    z-index: 2;
     font-weight: 500;
+    margin-bottom: 30px;
 }
+
 
 .breadcrumbnav li {
     display: inline-block;
     font-weight: bold;
     color: #d1d1e1;
 }
-
-
-
 
 .breadcrumbnav li:last-child::after {
     content: "";
@@ -242,9 +267,9 @@
 .breadcrumbnav a {
     display: inline-block;
     position: relative;
-    padding-right: 15px;
+    padding-right: 14px;
     color: #bababa;
-    font-size: 15px;
+    font-size: 12px;
     line-height: 22px;
     transition: all 0.3s ease-in-out;
     text-decoration: none;
@@ -271,10 +296,6 @@
 
 /* -----------------section------------- */
 
-.dis-flex {
-    display: flex;
-    flex-wrap: wrap;
-}
 
 .section .dis-flex {
     align-items: center;
@@ -313,7 +334,13 @@
 .section .heading {
     width: 220px;
 }
-
+@media only screen and (max-width: 1200px){
+.section .logo-box-outer {
+    flex-basis: 100%;
+    padding-left: 0;
+    width: 100%;
+}
+}
 
 
 /*---------------------------ai service------------------------------------------------------ */
@@ -363,8 +390,6 @@ p:last-child {
     padding-bottom: 50px;
 }
 
-
-
 .flex-2:first-child {
     padding-right: 20px;
 }
@@ -391,7 +416,6 @@ p:last-child {
     padding: 0 0 60px;
 }
 
-.box {}
 
 .three-column-icon-section .col-box-outer .has-vlink .box .box-link {
     font-size: 0;
@@ -634,7 +658,7 @@ p:last-child {
     font-size: 0;
 }
 
-span .box-link {}
+
 
 
 
@@ -1252,6 +1276,16 @@ p:last-child {
 .bg-light, .bg-dark-theme {
     background: #f8f8f8;
 }
+.padding-b-120 {
+    padding-bottom: 120px;
+}
+.padding-t-120 {
+    padding-top: 120px;
+}
+.head-txt {
+    max-width: 1060px;
+    margin: auto;
+}
 .head-txt h2 {
     font-size: 36px;
     line-height: 49px;
@@ -1260,9 +1294,11 @@ p:last-child {
     margin: 0 0 20px;
 }
 .head-txt p {
+    margin-top: 20px;
+    color: #3f3f3f;
     font-size: 16px;
-    color: #666666;
-    line-height: 29px;
+    
+    line-height: 26px;
     margin: 0 0 20px;
 }
 .video-section .client-testimonial-slider {
@@ -1277,6 +1313,10 @@ p:last-child {
     user-select: none;
     cursor: -webkit-grab;
     cursor: grab;
+}
+.glider::-webkit-scrollbar {
+    opacity: 0;
+    height: 0;
 }
 .glider {
     margin: 0 auto;
@@ -1308,50 +1348,7 @@ p:last-child {
     display: flex;
     z-index: 1;
 }
-.video-section .glider-track {
-    padding-bottom: 16px;
-}
-.glider-track {
-    transform: translateZ(0);
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    z-index: 1;
-}
-.video-section .glider-track {
-    padding-bottom: 16px;
-}
-.glider-track {
-    transform: translateZ(0);
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    z-index: 1;
-}
-.video-section .glider-track {
-    padding-bottom: 16px;
-}
-.glider-track {
-    transform: translateZ(0);
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    z-index: 1;
-}
-.video-section .glider-track {
-    padding-bottom: 16px;
-}
-.glider-track {
-    transform: translateZ(0);
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    z-index: 1;
-}
+
 .video-section .shadow-box {
     position: relative;
 }
@@ -1419,6 +1416,16 @@ p:last-child {
     text-align: center;
     background: #fff;
 }
+.bg-jacarta, .bg-voilet, .bg-white {
+    background-color: #f6f6f6;
+    
+}
+p {
+    font-size: 16px;
+    color: #666666;
+    line-height: 29px;
+    margin: 0 0 20px;
+}
 .client-description p {
     font-size: 16px;
     color: #666666;
@@ -1426,20 +1433,57 @@ p:last-child {
 margin: 0 0 20px
 }
 .video-section .client-description .star-rating {
-    width: 96px;
+    width: 100px;
     height: 17px;
     background: url(https://www.valuecoders.com/wp-content/themes/valuecoders/v3.0/images/star-rating.png) no-repeat center;
     background-size: 100%;
     display: block;
     margin: 10px auto;
 }
+.video-section .client-description {
+    padding: 30px 25px;
+    min-height: 142px;
+    text-align: center;
+    background: #fff;
+}
+.video-section .client-description h3 {
+    margin: 0 0 5px;
+}
+.client-description p {
+    font-size: 20px;
+    line-height: 27px;
+    font-weight: 600;
+    color: #3f3f3f;
+}
 .video-section .client-description .detail {
-    color: #666666;
+    color: #534949;
     font-weight: 300;
 }
 .video-section .client-description .detail {
     display: block;
     text-align: center;
+    justify-content: center;
+}
+.video-section .shadow-box {
+    position: relative;
+}
+.video-section .shadow-box .client-video-box .frame-mask {
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+ .client-video-box a {
+    color: #212121;
+    text-decoration: none;
+}
+
+
+.video-section .client-videos {
+    position: relative;
+    margin: 0 10px;
+    border: 1px solid #e2e9ef;
+    background-color: #ffffff;
 }
 .video-section .glider-next, .video-section .glider-prev {
     display: none;
@@ -1466,11 +1510,7 @@ margin: 0 0 20px
     height: 20px;
     transform: rotate(180deg);
 }
-.vlazy {
-    background-image: none !important;
-    background-color: #F1F1FA !important;
-    background: none !important;
-}
+
 .video-section .glider-next, .video-section .glider-prev {
     display: none;
 }
@@ -1513,6 +1553,7 @@ margin: 0 0 20px
     height: 10px;
     background: #d9d9d9;
 }
+
 .glider-dot {
     border: 0;
     padding: 0;
@@ -1532,6 +1573,14 @@ margin: 0 0 20px
     height: 15px;
     background: #373658;
     margin: 0 1px;
+}
+.glider-dot.active {
+    background: #a89cc8;
+}
+.vlazy {
+    background-image: none !important;
+    background-color: #F1F1FA !important;
+    background: none !important;
 }
 /* ----------------------------------------contactus-------------------- */
 

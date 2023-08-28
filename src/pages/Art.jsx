@@ -8,14 +8,12 @@ function Art() {
 
         <><div className="hero-section">
             <Container>
-                <div className="content-wrap">
+                <section className="content-wrap" >
 
                     <div className='breadcrumbnav'>
-                        <ol className='breadcrumbnav'>
-                            <li><a href='#'>Home</a></li>
-                            <li><a href='#'>Services</a></li>
-                            <li>Artificial Intelligence</li>
-                        </ol>
+                            <a href='#'>Home</a>
+                            <a href='#'>Services</a>
+                            Artificial Intelligence
                     </div>
                     <div className='dis-flex'>
                         <div className='left-box'></div>
@@ -31,6 +29,9 @@ function Art() {
                                 growth and success. Experience the limitless
                                 possibilities and boost your bottom line like
                                 never before.</span></p>
+                                <div class="faq-outer">
+<div class="faq-accordion-item-outer active"></div>
+</div>
 
                         <div className='cta-wrap margin-t-50'>
                             <div className='cta-btn'>
@@ -42,9 +43,9 @@ function Art() {
                                     </span>
                                 </a>
                             </div>
-                        </div>
+                        </div> 
                     </div>
-                </div>
+                </section>
             </Container>
         </div>
             <div>
