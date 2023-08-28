@@ -116,7 +116,7 @@ function Video() {
                        <button data-index="4" aria-label="Page 5" role="tab" className="glider-dot"></button> 
                        <button data-index="5" aria-label="Page 6" role="tab" className="glider-dot"></button>
                        </div>
-                    </div>~
+                    </div>
 
                 </Container>
             </section>
